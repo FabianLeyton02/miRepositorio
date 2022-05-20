@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Clientes</title>
+</head>
+
+<body>
+    <div id="grilla">
+        <header class="border">
+            <h1 style="font-family: 'Oswald', sans-serif">
+                Automotora DeLujo
+            </h1>
+        </header>
+
+        <section id="logo" class="border">
+            <img src="../img/logo.jpg" alt="logo" width="60px" height="60px">
+        </section>
+
+        <nav class="border">
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./modelos.html">Modelos</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./financiacion.html">Financiación</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./clientes.html">Clientes</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <section id="contenido" class="border">
+            <div>
+                <ul class="listaSinPuntos">
+                    <li>
+                        <h3>Clientes Registrados</h3>
+                        <form action="" method="post">
+                            <ul class="listaSinPuntos">
+                                <li>
+                                    <label for="name">Usuario</label>
+                                    <input type="text" name="user_name" id="name">
+                                </li>
+                                <li>
+                                    <label for="pass">Contraseña</label>
+                                    <input type="password" name="user_pass" id="pass">
+                                </li>
+                                <li class="button">
+                                    <button>Ingresar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <h3>Clientes Nuevos</h3>
+                        <form action="">
+                            <ul class="listaSinPuntos">
+                                <li>
+                                    <label for="name">Usuario</label>
+                                    <input type="text" name="user_name" id="name">
+                                </li>
+                                <li>
+                                    <label for="mail">Correo</label>
+                                    <input type="text" name="user_mail" id="mail">
+                                </li>
+                                <li>
+                                    <label for="email">Contraseña</label>
+                                    <input type="password" name="user_pass" id="pass">
+                                </li>
+                                <li>
+                                    <label for="email">Repetir Contraseña</label>
+                                    <input type="password" name="user_pass2" id="pass2">
+                                </li>
+                                <li class="button">
+                                    <button>Registrar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="border">
+            © DeLujo 2022, Todos los derechos reservados
+        </footer>
+    </div>
+</body>
+
+</html>

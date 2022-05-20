@@ -1,0 +1,165 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "logo header header"
+        "nav nav nav"
+        "contenido contenido contenido"
+        "footer footer footer";
+    padding-top: 0;
+    margin-top: 0;
+    justify-items: stretch;
+    align-items: flex-start;
+}
+
+#grilla div {
+    border: 1px;
+    font-size: 21px;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.border {
+    border: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+header {
+    background-color: white;
+    grid-area: header;
+    height: 80px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section#contenido {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section#logo {
+    grid-area: logo;
+    background-color: white;
+    height: 80px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: lightslategray;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: darkblue;
+}
+
+.listaSinPuntos {
+    list-style-type: none;
+}
+
+body {
+    background-color: lightsteelblue;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    display: block;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    justify-content: center;
+    animation-delay: 1s;
+}
+
+.menu li:hover {
+    border-radius: 5px;
+    animation-delay: 1s;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: white;
+    animation-name: animate__slideInDown;
+    animation-delay: 0.2s;
+}
+
+.listaTexto {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: lightslategray;
+        animation-name: animate__slideInDown;
+        animation-delay: 0.2s;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+
+    }
+
+    .hamburger {
+        display: block;
+        animation-name: animate__slideInDown;
+        animation-delay: 0.2s;
+    }
+
+    header {
+        height: 6rem;
+    }
+
+    section#logo {
+        height: 6rem;
+    }
+
+    input {
+        width: 17rem;
+    }
+}
