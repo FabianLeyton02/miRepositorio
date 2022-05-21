@@ -49,7 +49,7 @@ section#logo {
 
 nav {
     grid-area: nav;
-    background-color: lightslategray;
+    background-image: linear-gradient(white,lightslategray);
 }
 
 img {
@@ -67,6 +67,8 @@ a {
 
 a:hover {
     background-color: darkblue;
+    transition: 1s;
+    transform: scale(1.2);
 }
 
 .listaSinPuntos {
