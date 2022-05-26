@@ -1,7 +1,6 @@
-#grilla {
+/* #grilla {
     display: grid;
-    grid-template-areas:
-        "logo header header"
+    grid-template-areas: "logo header header"
         "nav nav nav"
         "contenido contenido contenido"
         "footer footer footer";
@@ -16,7 +15,7 @@
     font-size: 21px;
     padding: 5px;
     margin-top: 0;
-}
+} */
 
 .border {
     border: 0;
@@ -24,32 +23,33 @@
     align-items: flex-start;
 }
 
-header {
+.encabezado{
+    background-color: white;
+}
+
+/* header {
     background-color: white;
     grid-area: header;
     height: 80px;
-}
+} */
 
-footer {
+/* footer {
     grid-area: footer;
-}
+} */
 
-section#contenido {
-    grid-area: contenido;
+.contenido{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
 }
 
-section#logo {
-    grid-area: logo;
+.logo{
     background-color: white;
     height: 80px;
 }
 
 nav {
-    grid-area: nav;
-    background-image: linear-gradient(white,lightslategray);
+    background-image: linear-gradient(white, lightslategray);
 }
 
 img {
@@ -58,14 +58,14 @@ img {
 }
 
 ul {
-    list-style: none;
+    list-style-type:none;
 }
 
 a {
     text-decoration: none;
 }
 
-a:hover {
+a :hover {
     background-color: darkblue;
     transition: 1s;
     transform: scale(1.2);
@@ -79,7 +79,7 @@ body {
     background-color: lightsteelblue;
     height: 100vh;
 }
-
+/* 
 .navbar {
     display: flex;
     align-items: center;
@@ -87,13 +87,13 @@ body {
     color: #fff;
 }
 
-.nav-links a {
+.navbar a {
     color: #fff;
     display: block;
-}
+} */
 
 /* NAVBAR MENU */
-.menu {
+/* .menu {
     display: flex;
     gap: 1em;
     font-size: 18px;
@@ -101,41 +101,37 @@ body {
     animation-delay: 1s;
 }
 
-.menu li:hover {
-    border-radius: 5px;
-    animation-delay: 1s;
-    transition: 0.3s ease;
-}
-
 .menu li {
     padding: 5px 14px;
 }
 
-input[type=checkbox] {
+.menu li :hover {
+    border-radius: 5px;
+    animation-delay: 1s;
+    transition: 0.3s ease;
+} */
+
+/* input[type=checkbox] {
     display: none;
 }
 
 /*HAMBURGER MENU*/
-.hamburger {
+/* .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
     color: white;
-    animation-name: animate__slideInDown;
-    animation-delay: 0.2s;
-}
+} */
 
 .listaTexto {
     text-align: center;
 }
-
+/* 
 @media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
         background-color: lightslategray;
-        animation-name: animate__slideInDown;
-        animation-delay: 0.2s;
     }
 
     .menu li:hover {
@@ -144,13 +140,10 @@ input[type=checkbox] {
 
     input[type=checkbox]:checked~.menu {
         display: block;
-
     }
 
     .hamburger {
         display: block;
-        animation-name: animate__slideInDown;
-        animation-delay: 0.2s;
     }
 
     header {
@@ -164,4 +157,4 @@ input[type=checkbox] {
     input {
         width: 17rem;
     }
-}
+} */
