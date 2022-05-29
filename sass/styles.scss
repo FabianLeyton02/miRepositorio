@@ -1,0 +1,53 @@
+.border {
+    border: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.espacio{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.encabezado {
+    background-color: white;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    background-color: white;
+    height: 80px;
+}
+
+nav {
+    background-image: linear-gradient(white, lightslategray);
+
+    .nav-link:hover {
+        transition: 1s;
+        transform: scale(1.2);
+    }
+}
+
+img {
+    height:auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.listaSinPuntos {
+    list-style-type: none;
+    text-align: center;
+}
+
+body {
+    background-color: lightsteelblue;
+    height: 100vh;
+}
