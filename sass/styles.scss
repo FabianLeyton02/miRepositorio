@@ -1,16 +1,19 @@
+@import "genericos";
+@import "colores";
+
 .border {
     border: 0;
     padding: 0;
     align-items: flex-start;
 }
 
-.espacio{
+.espacio {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 .encabezado {
-    background-color: white;
+    background-color: $colorSecundario;
 }
 
 .contenido {
@@ -20,34 +23,11 @@
 }
 
 .logo {
-    background-color: white;
+    background-color: $colorSecundario;
     height: 80px;
 }
 
-nav {
-    background-image: linear-gradient(white, lightslategray);
-
-    .nav-link:hover {
-        transition: 1s;
-        transform: scale(1.2);
-    }
-}
-
-img {
-    height:auto;
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.listaSinPuntos {
+.lista {
     list-style-type: none;
     text-align: center;
-}
-
-body {
-    background-color: lightsteelblue;
-    height: 100vh;
 }

@@ -1,0 +1,23 @@
+@import "colores";
+
+nav {
+    background-image: linear-gradient($colorSecundario, $colorPrimario);
+
+    .nav-link:hover {
+        transition: 1s;
+        transform: scale(1.2);
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $colorFondo;
+}
