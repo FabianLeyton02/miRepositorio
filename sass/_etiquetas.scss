@@ -1,0 +1,60 @@
+// Aca van las modificaciones generales para las etiquetas
+@import "estilos";
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    color: map-get($colores, colorPrimario);
+    font-style : map-get($fuentes, tituloPrincipal);
+}
+
+h2{
+    color: map-get($colores, colorPrimario);
+    font-style: map-get($fuentes, tituloSecundario);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: map-get($colores, colorSecundario);
+    display: block;
+    text-decoration: none;
+}
+
+li a:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+nav {
+    background-color: map-get($colores, colorPrimario);
+    padding: 5px;
+}
+
+footer {
+    text-align: right;
+    padding: 1em;
+    p {
+        color: map-get($colores, colorPrimario);
+        font-style:map-get($fuentes , pie);
+        font-weight: bold;
+    }
+}

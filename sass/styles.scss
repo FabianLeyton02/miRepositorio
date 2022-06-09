@@ -1,33 +1,163 @@
-@import "genericos";
-@import "colores";
-
-.border {
-    border: 0;
+* {
+    margin: 0;
     padding: 0;
-    align-items: flex-start;
+}
+
+@import "estilos";
+@import "etiquetas";
+@import "menu";
+@import "carousel";
+@import "modal";
+
+.contenedorColumnas{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin espacioEm($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+.raiz {
+    @extend .contenedorColumnas;
+    justify-content: flex-start;
 }
 
 .espacio {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.encabezado {
-    background-color: $colorSecundario;
+    @include espacioEm(1em, 1em);
 }
 
 .contenido {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.logo {
-    background-color: $colorSecundario;
-    height: 80px;
+.bienvenida {
+    @extend .contenedorColumnas;
+    align-items: center;
 }
 
-.lista {
-    list-style-type: none;
-    text-align: center;
+.encabezado {
+    display: inline-flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado__titulo {
+    right: 1em;
+}
+
+.auto {
+    @extend .contenedorColumnas;
+    align-items: center;
+    @include espacioEm(2em, 2em);
+
+    img {
+        size: 40%;
+        padding: 1em;
+    }
+
+    a {
+        color: map-get($colores, colorPrimario);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.bienvenida {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formDiv {
+    width: 50%;
+}
+
+.cuadro {
+    background-color: map-get($colores, colorPrimario);;
+    flex-direction: column;
+    padding: 2em;
+    margin: 2em;
+
+    ul li {
+        padding: 1em;
+
+        h3,
+        h4 {
+            color: white;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            font-size: large;
+        }
+
+        ul li {
+            color: white;
+        }
+    }
+}
+
+.bienvenida__der {
+    flex-direction: column;
+    width: 500px;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: map-get($colores, colorPrimario);
+
+        li {
+            :hover {
+                display: inline-block;
+                transform: none;
+            }
+        }
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+        left: 0;
+    }
+
+    .hamburger {
+        padding-left: 2%;
+        display: flex;
+    }
+
+    footer {
+        
+        p {
+            font-size: small;
+            color: map-get($colores, colorPrimario);
+        }
+    }
+
+    .modal__contenido {
+        width: 300px;
+    }
 }

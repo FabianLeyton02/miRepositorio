@@ -5,100 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce nuestros modelos 0km">
+    <meta name="keywords" content="AUTOS, COCHES, NUEVOS, 0KM, VW, VOLSKWAGEN">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <title>Automotora DeLujo | Modelos</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col logo">
-                <img src="../img/logo.jpg" alt="logo" width="60px" height="60px">
+    <div class="raiz animate__animated animate__fadeIn animate__fast">
+        <header>
+            <div class="encabezado">
+                <a href="../index.html"><img src="../img/logo.jpg" class="logo" alt="logo"></a>
+                <h1>Automotora DeLujo</h1>
+                <a href="./clientes.html"><img src="../img/login.jpg" alt="login"></a>
             </div>
-            <div class="col encabezado">
-                <h1>
-                    Automotora DeLujo
-                </h1>
-            </div>
-        </div>
 
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                            <a class="nav-link active" aria-current="page">Modelos</a>
-                            <a class="nav-link" href="./ofertas.html">Ofertas</a>
-                            <a class="nav-link" href="./financiacion.html">Financiación</a>
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                            <a class="nav-link" href="./clientes.html">Clientes</a>
-                        </div>
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="./modelos.html">Modelos</a></li>
+                        <li><a href="./ofertas.html">Ofertas</a></li>
+                        <li><a href="./financiacion.html">Financiación</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenido">
+            <div class="auto">
+                <img class="autoImg" src="../img/tiguan.jpg" alt="tiguan">
+                <a href="#TIGUAN">TIGUAN</a>
+                <div id="TIGUAN" class="modal">
+                    <div class="modal__contenido">
+                        <header>
+                            <a href="#">X</a>
+                        </header>
+
+                        <h2>TIGUAN</h2>
+                        <section class="auto-slider">
+                            <div id="slider">
+                                <figure>
+                                    <img src="../img/tiguan-exterior-01.jpeg" alt="tiguan-exterior-01">
+                                    <img src="../img/tiguan-exterior-02.jpg" alt="tiguan-exterior-02">
+                                    <img src="../img/tiguan-exterior-03.jpg" alt="tiguan-exterior-03">
+                                    <img src="../img/tiguan-interior-01.jpg" alt="tiguan-interior-01">
+                                    <img src="../img/tiguan-interior-02.jpg" alt="tiguan-interior-02">
+                                </figure>
+                            </div>
+                        </section>
+
+                        <ul>
+                            <li>
+                                Emoción en estado puro
+                            </li>
+                            <li>
+                                El Tiguan ha llegado para ampliar tu abanico de posibilidades.
+                            </li>
+                            <li>
+                                Si cada viaje era la
+                                oportunidad de vivir una nueva aventura, ahora lo harás más conectado, con más potencia
+                                y todo el carácter de este SUV.
+                            </li>
+                            <li>
+                                Una versión que se supera para estar al día, como tú.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
-
-        <div class="row animate__animated animate__fadeIn animate__slow">
-
-            <div class="row espacio">
-                <p class="fs-2">
-                    ATLAS
-                </p>
-                <img src="../img/atlas.jpg" alt="atlas">
             </div>
 
-            <div class="row espacio">
-                <p class="fs-2">
-                    TIGUAN
-                </p>
-                <img src="../img/tiguan.jpg" alt="tiguan">
+            <div class="auto">
+                <img class="autoImg" src="../img/atlas.jpg" alt="atlas">
             </div>
 
-            <div class="row espacio">
-                <p class="fs-2">
-                    GOL
-                </p>
-                <img src="../img/gol.jpg" alt="gol">
+            <div class="auto">
+                <img class="autoImg" src="../img/gol.jpg" alt="gol">
+                <p>GOL</p>
             </div>
 
-            <div class="row espacio">
-                <p class="fs-2">
-                    ID4
-                </p>
-                <img src="../img/id4.jpg" alt="id4">
+            <div class="auto">
+                <img class="autoImg" src="../img/id4.jpg" alt="id4">
+                <p>ID4</p>
             </div>
 
-            <div class="row espacio">
-                <p class="fs-2">
-                    TAOS
-                </p>
-                <img src="../img/taos.jpg" alt="taos">
+            <div class="auto">
+                <img class="autoImg" src="../img/taos.jpg" alt="taos">
+                <p>TAOS</p>
+            </div>
+
+            <div class="auto">
+                <img class="autoImg" src="../img/vw-nivus.jpg" alt="taos">
+                <p>NIVUS</p>
+            </div>
+
+            <div class="auto">
+                <img class="autoImg" src="../img/vw-troc.jpeg" alt="taos">
+                <p>T-ROC</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="footer">
+        <footer>
+            <p>
                 © DeLujo 2022, Todos los derechos reservados
-            </div>
-        </div>
+            </p>
+        </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>
