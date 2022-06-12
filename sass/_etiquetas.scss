@@ -1,27 +1,27 @@
 // Aca van las modificaciones generales para las etiquetas
 @import "estilos";
 
-body {
-    background-color: whitesmoke;
-}
-
 header {
     width: 100%;
 }
 
 h1 {
     color: map-get($colores, colorPrimario);
-    font-style : map-get($fuentes, tituloPrincipal);
+    font-family: 'Oswald', sans-serif;
 }
 
-h2{
+h2 {
     color: map-get($colores, colorPrimario);
-    font-style: map-get($fuentes, tituloSecundario);
+    font-family: 'Oswald', sans-serif;
 }
 
 img {
     height: auto;
     max-width: 100%;
+}
+
+main {
+    flex-grow: 1;
 }
 
 a {
@@ -50,11 +50,16 @@ nav {
 }
 
 footer {
-    text-align: right;
-    padding: 1em;
+    bottom: 0;
+    text-align: center;
+    background-color: map-get($colores, colorPrimario);
+    width: 100%;
+    height: 2.5rem;
+
     p {
-        color: map-get($colores, colorPrimario);
-        font-style:map-get($fuentes , pie);
+        right: 1em;
+        color: map-get($colores, colorSecundario);
+        font-family: 'Oswald', sans-serif;
         font-weight: bold;
     }
 }

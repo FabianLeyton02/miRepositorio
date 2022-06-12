@@ -1,24 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0; }
-
-body {
-  background-color: whitesmoke; }
 
 header {
   width: 100%; }
 
 h1 {
   color: #091a64;
-  font-style: italic; }
+  font-family: 'Oswald', sans-serif; }
 
 h2 {
   color: #091a64;
-  font-style: normal; }
+  font-family: 'Oswald', sans-serif; }
 
 img {
   height: auto;
   max-width: 100%; }
+
+main {
+  flex-grow: 1; }
 
 a {
   color: white;
@@ -41,11 +44,15 @@ nav {
   padding: 5px; }
 
 footer {
-  text-align: right;
-  padding: 1em; }
+  bottom: 0;
+  text-align: center;
+  background-color: #091a64;
+  width: 100%;
+  height: 2.5rem; }
   footer p {
-    color: #091a64;
-    font-style: italic;
+    right: 1em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold; }
 
 .menu {
@@ -134,20 +141,19 @@ div#slider figure {
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: all 1s;
-  border: 1px solid #091a64; }
+  transition: all 1s; }
 
 .modal__contenido {
   background-color: #2951f0;
-  width: 500px;
-  margin: 20% auto;
+  width: 750px;
+  margin: 10% auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .modal__contenido h2 {
     color: white;
-    font-style: italic; }
+    font-family: 'Oswald', sans-serif; }
   .modal__contenido header {
     background-color: #2951f0;
     width: 100%;
@@ -156,8 +162,13 @@ div#slider figure {
       color: white;
       text-decoration: none;
       right: 1em; }
-  .modal__contenido ul li {
-    color: white; }
+    .modal__contenido header a:hover {
+      transform: none;
+      transition: none; }
+  .modal__contenido ul {
+    padding: 1em; }
+    .modal__contenido ul li {
+      color: white; }
 
 .modal__cabezal {
   background-color: #091a64;
@@ -171,12 +182,12 @@ div#slider figure {
   display: flex;
   flex-direction: column; }
 
-.raiz {
-  justify-content: flex-start; }
-
 .espacio {
   padding-top: 1em;
   padding-bottom: 1em; }
+
+.raiz {
+  height: 100vh; }
 
 .contenido {
   display: flex;
@@ -193,9 +204,6 @@ div#slider figure {
   justify-content: space-between;
   align-items: center; }
 
-.encabezado__titulo {
-  right: 1em; }
-
 .auto {
   align-items: center;
   padding-top: 2em;
@@ -206,19 +214,13 @@ div#slider figure {
   .auto a {
     color: #091a64;
     font-weight: bold;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-style: italic; }
+  .auto a:hover {
+    transition: 1s;
+    transform: scale(1.2); }
   .auto p {
     font-weight: bold; }
-
-.bienvenida {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap; }
-  .bienvenida h2 {
-    text-align: center; }
-
-.formDiv {
-  width: 50%; }
 
 .cuadro {
   background-color: #091a64;
@@ -238,9 +240,38 @@ div#slider figure {
     .cuadro ul li ul li {
       color: white; }
 
-.bienvenida__der {
-  flex-direction: column;
-  width: 500px; }
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+/* Set a style for all buttons */
+button {
+  background-color: #d30505;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%; }
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8; }
+
+/* Add padding to containers */
+.container {
+  padding: 16px; }
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px; }
 
 @media (max-width: 768px) {
   .menu {
@@ -251,7 +282,8 @@ div#slider figure {
       display: inline-block;
       transform: none; }
   h1 {
-    font-size: large; }
+    font-size: large;
+    font-family: 'Oswald', sans-serif; }
   input[type=checkbox]:checked ~ .menu {
     display: block;
     left: 0; }
@@ -259,7 +291,15 @@ div#slider figure {
     padding-left: 2%;
     display: flex; }
   footer p {
-    font-size: small;
-    color: #091a64; }
+    font-size: small; }
   .modal__contenido {
-    width: 300px; } }
+    width: 400px; }
+  span.psw {
+    display: block;
+    float: none; }
+  .cancelbtn {
+    width: 100%; }
+  input[type=text],
+  input[type=password],
+  input[type=email] {
+    width: 100%; } }
