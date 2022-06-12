@@ -293,7 +293,7 @@ span.psw {
   footer p {
     font-size: small; }
   .modal__contenido {
-    width: 400px; }
+    width: 85%; }
   span.psw {
     display: block;
     float: none; }
