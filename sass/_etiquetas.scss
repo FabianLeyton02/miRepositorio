@@ -1,18 +1,17 @@
 // Aca van las modificaciones generales para las etiquetas
 @import "estilos";
 
+
 header {
     width: 100%;
 }
 
 h1 {
     color: map-get($colores, colorPrimario);
-    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
     color: map-get($colores, colorPrimario);
-    font-family: 'Oswald', sans-serif;
 }
 
 img {
@@ -59,7 +58,6 @@ footer {
     p {
         right: 1em;
         color: map-get($colores, colorSecundario);
-        font-family: 'Oswald', sans-serif;
         font-weight: bold;
     }
 }
